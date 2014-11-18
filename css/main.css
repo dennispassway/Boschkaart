@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
+html, body {
+   height: 100%;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 12px;
+}
+
+.menubalk {
+   background-color: #cd1634;
+   height: 60px;
+   border-bottom: solid 1px #333;
+   padding: 22px 0;
+   color: #fff;
+   font-size: 16px;
+}
+
+.logo {
+   font-weight: 700;
+}
+
+.menu {
+   font-weight: 300;
+   text-transform: lowercase;
+   text-align: right;
+}
+
+.menu a {
+   color: #fff;
+   margin: 0 15px;
+}
+
+#map {
+   height: 100%;
+   width: 100%;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.schooltitel {
+   font-size: 16px;
+   font-weight: 600;
+   color: #cd1634;
+}
+
+.schooladres {
+   font-size: 13px;
+   color: #666;
+}
+
+.schoolcontact {
+   font-style: italic;
+   font-size: 13px;
+   color: #666;
+}
+
+.legenda {
+   border: solid 1px #777;
+   background-color: #fff;
+   padding: 15px;
+   position: absolute;
+   z-index: 999999;
+   left: 10px;
+   bottom: 10px;
+}
+
+.layOver {
+   width: 320px;
+   border: solid 1px #777;
+   background-color: #fff;
+   padding: 15px;
+   position: absolute;
+   z-index: 999999;
+   right: 40px;
+   top: 80px;
+   display: none;
+}
+
+.layOver h2 {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 500;
+   color: #333;
+   margin: 0 0 5px 0;
+}
+
+.layOver p {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+   color: #666;
+   margin: 0;
+}
+
+.layOver a {
+   color: #cd1634;
+}

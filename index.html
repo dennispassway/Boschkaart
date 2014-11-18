@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Scholen Datavisualisatie - Scholen</title>
+    <meta name="description" content="Datavisualisatie over hoe leerlingen van de basisscholen in Den Bosch hun carriere vervolgen.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/leaflet.ie.css" />
+    <![endif]-->
+
+    <!-- Top Scripts -->
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/vendor/leaflet.js"></script>
+    <script src="js/vendor/stamen.js"></script>
+    <script src="wijken.json"></script>
+  </head>
+
+  <body>
+    <div class="menubalk">
+      <div class="container">
+        <div class="col-xs-6 logo">Basisscholen in 's-Hertogenbosch</div>
+        <div class="col-xs-6 menu">
+        <a href="#" id="uitlegLink">uitleg</a>
+        <a href="#" id="artikelLink">artikel</a>
+        <a href="#" id="datasetsLink">datasets</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="legenda">
+      <img src="img/legenda.jpg" alt="Legenda">
+    </div>
+
+    <div id="uitleg" class="layOver">
+      <span class="close">x</span>
+      <h2>Uitleg</h2>
+      <p>Deze tekst kan naar wens ingevuld worden</p>
+    </div>
+
+    <div id="artikel" class="layOver">
+      <span class="close">x</span>
+      <h2>Artikel BD.nl</h2>
+      <p>Deze datavisualisatie is een uitbreiding op een artikel verschenen in het Brabants Dagblad. Om het artikel te bekijken op de website van het Brabants Dagblad kunt u onderstaande link volgen:<br><br>
+      <a href="http://www.bd.nl/" target="_blank">naar het artikel</a></p>
+    </div>
+
+    <div id="datasets" class="layOver">
+      <span class="close">x</span>
+      <h2>Datasets</h2>
+      <p>Voor deze datavisualisatie zijn verschillende datasets gebruikt. Deze datasets zijn afkomstig van Scholen op de Kaart, het CBS en het DUO. De uiteindelijke datasets kunnen in JSON formaat teruggevonden via onderstaande links:<br><br>
+      <a href="dataset.csv" target="_blank">School Locatie &amp; Prestatie (.CSV)</a><br><br>
+      <a href="postcode-school.csv" target="_blank">Postcode van Scholen (.CSV)</a><br><br>
+      <a href="wijken.json" target="_blank">Polygonen Wijken (.JSON)</a></p>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- Bottom JS -->
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/wijkbijschool.js"></script>
+  </body>
+</html>
